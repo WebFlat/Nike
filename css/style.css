@@ -1,7 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/155263ca437b4d97451a5adbddf19f82?family=MuseoSansW01-Rounded100);
 * {
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 html {
@@ -21,6 +20,8 @@ body{
 }
 a {
 	text-decoration: none;
+	-webkit-transition: all .4s ease-in;
+	-o-transition: all .4s ease-in;
 	transition: all .4s ease-in;
 }
 .container {
@@ -34,15 +35,18 @@ a {
 
 }
 .card {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0 auto;
 }
 .logo__img {
 	width: 6.5rem;
+	-webkit-transition: all .4s ease-in;
+	-o-transition: all .4s ease-in;
 	transition: all .4s ease-in;
 }
 .logo {
@@ -50,26 +54,34 @@ a {
 }
 .logo__img:hover,
 .logo__img:focus {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 .preview {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-top: 7rem;
 	padding: 0;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .card__gallery {
-	flex-basis: 65%;
+	-ms-flex-preferred-size: 65%;
+	    flex-basis: 65%;
 	margin-top: 6.5rem;
 	padding: 0  4rem 2rem 4rem;
 }
 .preview__dots {
 	display: inline-block;
 	margin: .8rem;
+	-webkit-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
 	transition: all .2s ease-in;	
 }
 .preview__link {
@@ -84,7 +96,9 @@ a {
 .preview__link:focus {
 /*	background-color: #1f273f;
 */	border: 1.3px solid #7e838b;
-	transform: scale(1.7);
+	-webkit-transform: scale(1.7);
+	    -ms-transform: scale(1.7);
+	        transform: scale(1.7);
 }
 .dark {
 	background-color: #ccc;
@@ -96,7 +110,8 @@ a {
 	background-color: #29e3ea;
 }
 .card__info {
-	flex-basis: 35%;
+	-ms-flex-preferred-size: 35%;
+	    flex-basis: 35%;
 }
 h1 {
 	font-size: 2.4rem;
@@ -183,9 +198,13 @@ span {
 	position: absolute;
 	top: 90%;
 	left: 50%;
-	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	    -ms-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
 	opacity: 0;
 	z-index: -1;
+	-webkit-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
 	transition: all .3s ease-in;
 	background-color: #202835;
 }
@@ -196,6 +215,8 @@ span {
 	color: #575d66;
 	font: 100 1.4rem museo-sans, sans-serif;
 	border-bottom: 1px solid transparent; 
+	-webkit-transition: all .3s ease-in; 
+	-o-transition: all .3s ease-in; 
 	transition: all .3s ease-in;
 	padding: 0.3rem 1.2rem;
 
@@ -216,6 +237,8 @@ span {
  	background-color: #202835;
  	margin-top: 3rem;
  	cursor: pointer;
+ 	-webkit-transition: all .3s ease-in-out;
+ 	-o-transition: all .3s ease-in-out;
  	transition: all .3s ease-in-out;
 }
 .btn:hover,
