@@ -212,7 +212,7 @@ span {
 	list-style: none;
 	display: inline-block;
 	position: absolute;
-	top: 73%;
+	top: 60%;
 	left: 50%;
 	-webkit-transform: translate(-50%, 0);
 	    -ms-transform: translate(-50%, 0);
