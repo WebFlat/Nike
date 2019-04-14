@@ -182,9 +182,9 @@ span {
 	/*width: 1rem;
 	height: 1rem;*/
 	margin-left: .5rem;
-	-webkit-transition: all .3s ease-in;
-	-o-transition: all .3s ease-in;
-	transition: all .3s ease-in;
+	-webkit-transition: all .4s ease-in;
+	-o-transition: all .4s ease-in;
+	transition: all .4s ease-in;
 
 	
 }
