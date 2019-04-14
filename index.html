@@ -29,23 +29,25 @@
 		<main>
 			<div class="card">
 				<div class="card__gallery">
-					<img src="img/Nike.png" alt="nike">
-					<ul class="preview">
-						<li class="preview__dots">
-							<a href="#" class="preview__link dark"></a>
-						</li>
-						<li class="preview__dots">
-							<a href="#" class="preview__link"></a>
-						</li>
-						<li class="preview__dots">
-							<a href="#" class="preview__link red"></a>
-						</li>
-						<li class="preview__dots">
-							<a href="#" class="preview__link green"></a>
-						</li>
-					</ul>
+					<img class="card__img" src="img/Nike.png" alt="nike">
+					<div class="card__wrapper">
+						<ul class="card__preview">
+							<li class="card__dots">
+								<a href="#" class="card__link" style="background-color: #ccc;"></a>
+							</li>
+							<li class="card__dots">
+								<a href="#" class="card__link"></a>
+							</li>
+							<li class="card__dots">
+								<a href="#" class="card__link" style="background-color: #ed3333;"></a>
+							</li>
+							<li class="card__dots">
+								<a href="#" class="card__link" style="background-color: #29e3ea;"></a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="card_info">
+				<div class="card__info">
 					<h1>Nike SB Stefan <br>Janoski Max</h1>
 					<p>Unisex Skateboarding Shoe</p>
 					<ul class="card__stars" data-stars="3">
@@ -93,13 +95,13 @@
 									</ul>
 								</label>
 							</div>
-						</form>
-						<div class="btn">Add to cart</div>
+						
+						<button class="btn">Add to cart</button>
+
 					</div>
 				</div>
 			</div>
 		</main>
 	</div>
-	<script src="js/main.js"></script>
 </body>
 </html>
